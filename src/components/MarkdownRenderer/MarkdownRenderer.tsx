@@ -5,14 +5,9 @@ import "./MarkdownRenderer.scss";
 
 const MarkdownRenderer: FC = () => {
   const [markdownText, setMarkdownText] = useState("");
-  const [renderedText, setRenderedText] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     setMarkdownText(e.target.value);
-  };
-
-  const handleRenderClick = () => {
-    setRenderedText(markdownText);
   };
 
   return (
@@ -22,15 +17,8 @@ const MarkdownRenderer: FC = () => {
           markdownText={markdownText}
           handleChange={handleChange}
         />
-        <MarkdownPreview markdownText={renderedText} />
+        <MarkdownPreview markdownText={markdownText} />
       </div>
-      <button
-        onClick={handleRenderClick}
-        className="markdown-renderer__button"
-        aria-label="Render Markdown"
-      >
-        Render
-      </button>
     </div>
   );
 };
