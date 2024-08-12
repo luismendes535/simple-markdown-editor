@@ -1,0 +1,93 @@
+@import './styles/variables';
+
+/* Ensure html, body, and #root take up the full height and width of the viewport */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Root styles */
+:root {
+  font-family: $font-family;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: $color-gray-dark;
+  background-color: $color-black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Link styles */
+a {
+  font-weight: 500;
+  color: $color-link;
+  text-decoration: inherit;
+  transition: color $transition-duration;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
+/* Body styles */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: inherit;
+  color: inherit;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Button styles */
+button {
+  border-radius: $border-radius-default;
+  border: 1px solid transparent;
+  padding: $space-button-padding;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: $color-button-bg-dark;
+  cursor: pointer;
+  transition: border-color $transition-duration;
+
+  &:hover {
+    border-color: $color-link;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
+
+/* Light mode adjustments */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: $color-text-light;
+    background-color: $color-white;
+  }
+
+  a:hover {
+    color: lighten($color-link-hover, 10%);
+  }
+
+  button {
+    background-color: $color-button-bg-light;
+  }
+}

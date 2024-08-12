@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.markdown-editor {
+  textarea {
+    width: 100%;
+    height: 200px;
+    padding: $space-padding-small;
+    font-size: 16px;
+    border: $border-default;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+  }
+}

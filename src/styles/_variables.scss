@@ -1,0 +1,37 @@
+// Color Palette
+$color-white: #ffffff;
+$color-black: #242424;
+
+$color-primary: #007bff;
+$color-primary-hover: darken($color-primary, 10%);
+
+$color-gray-light: #f5f5f5;
+$color-gray-dark: #ccc;
+
+$color-text-light: #213547;
+$color-text-dark: rgba(255, 255, 255, 0.87);
+
+$color-link: #646cff;
+$color-link-hover: #535bf2;
+
+$color-button-bg-dark: #1a1a1a;
+$color-button-bg-light: #f9f9f9;
+
+// Borders
+$border-default: 1px solid #ddd;
+$border-radius-default: 8px;
+
+// Padding and Spacing
+$space-padding-small: 10px;
+$space-padding-medium: 20px;
+$space-gap: 20px;
+$space-button-padding: 0.6em 1.2em;
+
+// Typography
+$font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+// Layout
+$max-width-container: 800px;
+
+// Transition
+$transition-duration: 0.25s;

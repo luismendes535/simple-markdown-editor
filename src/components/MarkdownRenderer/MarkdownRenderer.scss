@@ -1,0 +1,35 @@
+@import '../../styles/variables';
+
+.markdown-renderer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: $space-padding-small;
+  border: 1px solid $color-gray-dark;
+  border-radius: 4px;
+  background-color: $color-gray-light;
+
+  &__content {
+    display: flex;
+    width: 100%;
+    gap: $space-gap;
+    margin-bottom: $space-gap;
+  }
+
+  &__button {
+    padding: $space-padding-small 20px;
+    font-size: 16px;
+    background-color: $color-primary;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $color-primary-hover;
+    }
+  }
+}
