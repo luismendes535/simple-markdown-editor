@@ -15,6 +15,7 @@ const MarkdownPreview: FC<MarkdownPreviewProps> = ({ markdownText }) => {
     <div
       className="markdown-preview"
       dangerouslySetInnerHTML={createMarkup()}
+      data-testid="markdown-preview"
     />
   );
 };

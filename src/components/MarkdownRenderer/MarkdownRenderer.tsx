@@ -22,7 +22,7 @@ const MarkdownRenderer: FC = () => {
   };
 
   return (
-    <div className="markdown-renderer">
+    <div className="markdown-renderer" data-testid="markdown-renderer">
       <div className="markdown-renderer__content">
         <MarkdownEditor
           markdownText={markdownText}
