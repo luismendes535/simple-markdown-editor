@@ -4,9 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  max-width: 1200px;
-  padding: $space-padding-small;
+  padding: $space-small;
   border: 1px solid $color-gray-dark;
   border-radius: 4px;
   background-color: $color-gray-light;
@@ -16,10 +14,14 @@
     width: 100%;
     gap: $space-gap;
     margin-bottom: $space-gap;
+    
+    > div {
+      flex: 1;
+    }
   }
 
   &__button {
-    padding: $space-padding-small 20px;
+    padding: $space-small 20px;
     font-size: 16px;
     background-color: $color-primary;
     color: white;

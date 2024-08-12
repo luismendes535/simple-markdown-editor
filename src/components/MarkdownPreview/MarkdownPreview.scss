@@ -2,10 +2,9 @@
 
 .markdown-preview {
   flex: 1;
-  padding: $space-padding-small;
+  padding: $space-small;
   border: $border-default;
   border-radius: 4px;
   background-color: white;
   overflow-y: auto;
-  height: 200px;
 }
